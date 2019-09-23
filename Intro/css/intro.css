@@ -1,0 +1,13 @@
+/*Page Title Style*/
+h1 {
+    text-align: center;
+    background-color: rgb(192, 180, 180);
+    border-radius: 25px;
+}
+/* Front of Paragraphs style*/
+span {
+    font-weight: bold;
+    background-color: darkblue;
+    color: whitesmoke;
+    text-decoration: underline;
+}
