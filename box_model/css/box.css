@@ -1,0 +1,19 @@
+/*Page Title Style -  both elements we have used Id from the div tag which includes the header content */
+#header { /*That is header calling */
+    text-align: center;
+    background-color: rgb(192, 180, 180);
+    border-radius: 25px;
+}
+/* Main title style */
+#header h1{ /* Specified element of  */
+    margin: 0;
+    text-decoration: underline;
+    text-decoration: bold;
+}
+/* The sub title of the page style */
+#header small { /* That is how we can choose more specified elements of html code. */
+    text-decoration: none;
+    position: relative; 
+    top: -20px;
+    margin: 0;
+}
