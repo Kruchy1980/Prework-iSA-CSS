@@ -1,0 +1,153 @@
+/*Page Title Style -  both elements we have used Id from the div tag which includes the header content */
+#header { /*That is header calling */
+    text-align: center;
+    background-color: rgb(192, 180, 180);
+    border-radius: 25px;
+}
+/* Main title style */
+#header h1{ /* Specified element of  */
+    margin: 0;
+    text-decoration: underline;
+}
+/* The sub title of the page style */
+#header small { /* That is how we can choose more specified elements of html code. */
+    text-decoration: none;
+    position: relative; 
+    top: -20px;
+    margin: 0;
+}
+/* Page content style as we will notice ID's are heavier than classes so class will change only when !important is subscribed */
+#content p {
+    display: block;
+    color: orange;
+    background-color: grey;
+}
+/* Page content class for all */
+.paragraph {
+    letter-spacing: 3px;
+}
+/* Separate paragraphs style */
+.one {
+    color: white !important; 
+    letter-spacing: 2px;
+    background-color: blue !important;
+}
+.two {
+    background-color: black; /* As we can see that backround color does displays and that is because it is not marked as important and selector class is lighter than section selector Id. */
+    font-size: 1.2em;
+}
+.three {
+    font-size: 1.4em;
+}
+.four {
+    font-size: 1.6em;
+}
+.five {
+    font-size: 1.8em;
+}
+.six {
+    font-size: 2.0em;
+}
+/* Selecting multiply different elements */
+/*  If we want to mark couple elenents we can write them after coma like this */
+#content .one, #content .three, #content .five { /* We have use here two selectors for element to overwrite the main id called content but we can not overwrite the !important keyword.*/
+    background-color: chartreuse;
+}
+/* footer paragraph elements style */
+#footer p {
+    background-color: grey;
+}
+/* Some style to anchor tags in footer */
+/* Just because we have the anchor tags only in the footer we can use onlu "a" tag as selector, but if we will have them more we will need to use more specified selector. */
+a {
+    display: block;
+    width: 50%;
+}
+small {
+    color: black;
+}
+/* Descendand selectors*/
+/* These are seectors which are taking care of nested elements typed without any special marks. */
+
+/* sub-content-child */
+
+/* Child selectors*/
+#content > p { /* The mark > is called child combinator which shows us direct childs */
+    color: yellow; /* It will change the style only for the direct childs of element.*/
+}
+/* Adjacent selectors - these are the selectors which comes directy after the selected element*/
+#content h4 + p { /* As we can see it will choose all the first element after first element typed in selector in our case after h4 !!! Important it can not be div element because it wont work*/
+    color: blue;
+}
+/* Attribute selectors */
+/* These attributes can change the element with specofied attribute*/
+#sub-content-child p[class] { /* is changing the style in p with attribute class */
+    color: red;
+}
+#sub-content-child p[id] { /* is changing the style in p with attribute id */
+    color: green;
+}
+#sub-content-child a[title] { /* is changing the style in a with attribute title */
+    color: red;
+}
+#sub-content-child p[for="Mark"] { /* is changing the style in p with attribute for with specified value = "Mark" */
+    color: blanchedalmond;
+}
+a[href$="jpg"] { /* is changing the style in a with href ending - thanks to $= .jpg */
+    background-color: rgb(192, 180, 180);
+}
+/*Other operators eg ^= starting with eg "http" or something in out case*/
+/* Pseudo selectors */
+#pseudo-classes a:hover{ /* That is pseudo class which edits a's in specified place by hovering the mouse over the elements. */
+    background-color: red;
+}
+
+/* Active and visited effects */
+#pseudo-classes a:active{ /* That pseudo class changes color of the element anchor element when it is not visited yet */
+    color: yellow;
+}
+#pseudo-classes a:visited{ /* That pseudo class changes color of the element anchor element when it is after visit or was clicked */
+    color: blue;
+}
+/* First & Last Child selectors */
+#childs {
+    display: block
+}
+#childs a:first-child { /* It will give the first element of box specified styl. !!! Important - in the box can not be different elements b4 the element we want to give the style.  */
+    font-weight: bold;
+}
+#childs a:last-child { /* It will give the last element of box specified styl. !!! Important - in the box can not be different elements after the element we want to give the style.  */
+    font-weight: bold;
+}
+/* First $ Last of type selectors */
+#types p:first-of-type {
+    font-size: 2em;
+}
+
+#types p:last-of-type {
+    color: brown;
+    text-decoration: overline;
+}
+/* nth Child selectors - itconcerns to the lists*/
+#other li:nth-child(1), #other li:nth-child(7) {
+    font-weight: bold;
+}
+#other li:nth-child(even) {
+    background-color: pink;
+} 
+/* nth-type-of selectors - concerns to enery other elements but lists*/
+
+#eleven p:nth-of-type(2n+1) {
+    background-color: olivedrab;
+} 
+
+#twelve p:nth-of-type(3n+1) { 
+    text-decoration: line-through;
+}
+/* Combining selectors are selectors, which inherit classes of elements*/
+p.six {
+    color: black !important;
+}
+/* Universal selectors */
+/* Universal selector can be used to mark everything inside the box it concerns. */
+/* The universal selector is a star so the definition is: * {styles in here} */

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Jakub Kruszyński">
+    <title>CSS Targeting</title>
+    <!--  This is how we can link the CSS file to the page. -->
+    <link rel="stylesheet" href="../css/targeting.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Basic informations about CSS - targeting</h1><br>
+        <small>Targeting is used to take an element of HTML code and edit it by CSS code</small>
+    </div> <hr>
+    <div id="content">
+        <p class="paragraph one">That will be main content of the page with class added to element to mofdify it one by one or couple at a time.</p><br>
+        <h4>These elements are just for excercises purpose</h4>
+        <p class="paragraph two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit velit excepturi molestiae explicabo atque deserunt odio? Ipsum, quia. Error dolorem cum est aperiam aspernatur nesciunt a ea consequatur laboriosam.</p> <br>
+        <p class="paragraph three">All of the paragraphs get two classes one is the same af all and second one is different for each of paragraphs.</p><br>
+        <p class="paragraph four">Taht is done just because we would like to show the possibilities of classes and id's.</p><br>
+        <p class="paragraph five">The Id's are subscribed on every of the larger content like header, main content and footer.</p><br>
+        <p class="paragraph six">Present "version" of CSS which is CSS3 have some other tags than divs or header as section, article, aside, and footer which are used instead of popular divs to have more flexible posibilities to edit the page layout not only by Id or class selector but tag names as well, beside the code looks more clearly thanks to them.</p>
+        <div id="sub-content-child">
+            <h4>These elements are just for excercises purpose</h4>
+            <p>This a content which is nested to main content Child so it is treaten as a grand-Child</p>
+            <p>This a content which is nested to main content Child so it is treaten as a grand-Child</p>
+            <p id="thirg-gchild">This a content which is nested to main content Child so it is treaten as a grand-Child</p><hr>
+            <h4>These elements are just for excercises purpose</h4>
+            <p>One</p>
+            <p id="seltwo">two</p>
+            <p class="classthree">three</p>
+            <p for="Agness">four</p>
+            <p for="Mark">five</p>
+            <p>six</p>
+        </div>
+    </div><hr>
+    <div id="pseudo-classes">
+        <h3>These are examples for pseudo selectors are used to give small behaviour to the page</h3>
+        <a href="#"> something 1</a>
+        <a href="#">something 2</a>
+        <p>something 3</p>
+        <p>something 4</p>
+        <a href="https://www.wp.pl">something 5</a>
+        <a href="#">something 6</a>
+        <p>something 7</p>
+        <a href="#">something 8</a>
+        <p>something 9</p>
+    </div> <br>
+    <div id="childs">
+        <a href="#">First Child</a>
+        <a href="#">None</a>
+        <a href="#">None</a>
+        <a href="#">None</a>
+        <a href="#">None</a>
+        <a href="#">None</a>
+        <a href="#">None</a>
+        <a href="#">None</a>
+        <a href="#">Last Child</a>
+    </div><hr>
+    <div id="types">
+        <strong>The type Of selector - strong shouldn't be marked</strong>
+        <p>smth 1</p>
+        <p>smth 2</p>
+        <p>smth 3</p>
+        <p>smth 4</p>
+        <p>smth 5</p>
+        <p>smth 6</p>
+        <p>smth 7</p>
+        <small>Just to make sure that the "of-type" selector is working - small shouldnt be marked</small>
+    </div> <hr>
+    <div id="other">
+        <ul>
+            <li>ITEM LIST</li>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>IT IS A HALF WAY</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+        </ul>
+    </div> <hr>
+    <div id="hehe">
+        <div id="eleven">
+        <strong>The nth type Of selector concerns to blocks</strong>
+            <p>smth 1</p>
+            <p>smth 2</p>
+            <p>smth 3</p>
+            <p>smth 4</p>
+            <p>smth 5</p>
+            <p>smth 6</p>
+            <p>smth 7</p>
+        </div>
+        <div  id="twelve">Second element/box
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+        </div id="thirteen">
+        <div>Third element/box
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+        </div>
+        <div id="fourteen">Fourth element/box
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+            <p>smth</p>
+        </div>
+    </div>
+    <div id="footer">
+        <strong> Footer </strong> is a part where we can enter some informations about us, company politics and other similar. But nothing stays against to enter in this section anything we want, so we will use it for such an informations.
+        <p>Author: <mark><small>Jakub Kruszyński</small></mark> - As we can see CSS styles does not overwrites the style coded im HTML code as is "mark" tag in here which gives color yellow to the elements of footer</p> 
+        <p>Phone: <mark><small>+48-601-144-905</small></mark> - Beside if you look into CSS code you will see that the background color we have set to the paragraphs only not to the anchor or plain text tags. </p> 
+        <p>E-mail address: <mark><small>jakub.kruszynski@vp.pl</small></mark></p>  
+        <a id="one" href="#" title="anchor">Link to page About us <small> - Nothing linked just for course purpose.</small></a>
+        <a id="two"  href="something.jpg">Some other link1 <small> - Nothing linked just for course purpose.</small></a>
+        <a id="three"  href="#">Some other link2 <small> - Nothing linked just for course purpose.</small></a>
+        <a id="four"  href="#">Some other link3 <small> - Nothing linked just for course purpose.</small></a>
+        <a id="five" href="#">Some other link4 <small> - Nothing linked just for course purpose.</small></a>
+    </div>
+
+</body>
+</html>
