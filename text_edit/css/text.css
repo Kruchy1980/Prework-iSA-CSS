@@ -1,0 +1,105 @@
+/*Page Title Style -  both elements we have used Id from the div tag which includes the header content */
+#header { /*That is header calling */
+    text-align: center;
+    background-color: rgb(192, 180, 180);
+    border-radius: 25px;
+}
+/* Main title style */
+#header h1{ /* Specified element of  */
+    margin: 0;
+    text-decoration: underline;
+    text-decoration: bold;
+}
+/* The sub title of the page style */
+#header small { /* That is how we can choose more specified elements of html code. */
+    text-decoration: none;
+    position: relative; 
+    top: -20px;
+    margin: 0;
+}
+/* Font Size - pixels are used in absolute sizing, em and perxentage in reltive.*/
+/* We can give to every elements font sizing and it is absolute */
+
+/* h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+} */
+
+/* Better is to use inheritance and than eventualy chane te singular elements */
+/* For inheritance we need to firstly make an parent size for every elements we want and it will be everything in artile */
+
+article {
+    font-size: 16px; /* This is absolute sizing */
+}
+/* Now we can inherit the font size and modified it by using percentage or em. 1em == inherited sizing == 16px. 100%  == inherited sizing == 16px. */
+article h2 {
+    font-size: 3em; /* == 3 * 16px == 48px == 300% */
+}
+article p {
+    font-size: 80%; /* == 0.8 * 16px == 0.8em */
+}
+
+/* Font Family*/
+article h2, article p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Text decoration */
+a {
+    text-decoration: underline;
+}
+
+/* Font weight */
+h1 {
+    font-weight: bold;
+}
+
+p {
+    font-weight: lighter;
+}
+
+/* Text Transform  - by transformation we can add some special style to text*/
+#header small {
+    text-transform: capitalize;
+}
+
+body p{
+    text-transform: lowercase;
+}
+/* Text Color - editing text color we are doing by attribut color */
+#header h1 {
+    color: white;
+}
+
+/* Styling links - just by taking anchor tag we can add some parmeters for links or singular links*/
+a {
+    color: crimson;
+    text-decoration: none;
+    font-weight: bold;
+}
+ a:hover {
+    text-decoration: line-through;
+    color: darkmagenta;
+    background-color: aquamarine;
+}
+/* Letter spacing - spade between letters and line hight - hight of the lines with content.*/
+p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 2em;
+    word-spacing: 5px
+}
+/* Paragraph spacing - can be done by using margin attribute */
+p {
+    margin-bottom: 30px 
+}
+
+
+
