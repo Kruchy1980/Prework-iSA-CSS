@@ -29,3 +29,9 @@ body {
     top: -20px;
     margin: 0;
 }
+
+/* Here is what is needed for this module */
+#banner {
+    width: 100px;
+    height: 300px;
+}
