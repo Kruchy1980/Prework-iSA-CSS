@@ -30,8 +30,143 @@ body {
     margin: 0;
 }
 
+/*Nav bar small styling*/
+nav {
+    border: 5px ridge aqua;
+    background-color: rgb(24, 156, 35);
+}
+
+nav li {
+    display: inline;
+    border: 1px solid red;
+    background-color: rgb(160, 158, 158);
+    margin: 10px;
+    padding: auto;
+}
 /* Here is what is needed for this module */
-#banner {
-    width: 100px;
+.banner {
+    width: 33%;
     height: 300px;
+    float: left;
+}
+/* 3 Methodes of giving colors*/
+/* One of the method to subscribe colors is hexadecimal coded number of 6 mrks from 0-thr darkest - f -the lightest */
+    /* # is the constance and than first 2 marks are responsible for second first 2 marks are responsible for green third 2 marks are responsible for blue */
+/* Hexadeciml code*/
+.one {
+    background-color: #9a4e5f;
+}
+/* Rgb - Red Green Blue  Methode - it takes the coclors as shown in range of <0,255> each color which are separated by coma */
+.two {
+    background-color: rgb(194, 70, 206);
+}
+/* Rgba - Red Green Blue Alpha (responsible for opacity) Methode - it takes the coclors as shown in range of <0,255> each color which are separated by coma, plus last a == alfa == opacity with  value in range <0.0 - 1.0>  */
+/* Alpha/Opacity 0 - not wisible, 1 - totally visible */
+.three {
+    background-color: rgba(239, 67, 255, 0.5);
+}
+
+/* Opacity */
+/* First Circle*/
+#circle-1 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: rgba(200, 200, 100, 0.9); /* This is better use of opacity because it concerns only to color not to text inside the box */
+    border-radius: 200px;
+    top: 50pxpx;
+    left: 50px;
+    /* opacity: 0.9; - using opacity like the separate attribute will make invisible color and all other stuff inside the box even text or whatever.*/
+    text-align: center;
+}
+/* Second Circle*/
+#circle-2 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: rgba(200, 100, 200, 0.3); /* This is better use of opacity because it concerns only to color not to text inside the box */
+    border-radius: 200px;
+    top: -250px;
+    left: 150px;
+    /* opacity: 0.3; - using opacity like the separate attribute will make invisible color and all other stuff inside the box even text or whatever.*/
+    text-align: center;
+}
+/* Third Circle*/
+#circle-3 {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: rgba(100, 200, 200, 0.6); /* This is better use of opacity because it concerns only to color not to text inside the box */
+    border-radius: 200px;
+    top: -800px;
+    left: 250px;
+    /* opacity: 0.6;  - using opacity like the separate attribute will make invisible color and all other stuff inside the box even text or whatever. */
+    text-align: center;
+}
+
+/* CSS Gradient  - is a transition from one color to the second color*/
+/* Main style of gradient */
+#gradient {
+    position: absolute;
+    top: 1350px;
+}
+/* Button style */
+#button {
+    display: block;
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #77aaaa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    background: #aadddd;
+    background: -moz-linear-gradient(top, #aadddd 0%, #006b6b 100%);
+    background: -webkit-linear-gradient(top, #aadddd 0%, #006868 100%);
+    background: linear-gradient(top, #aadddd 0%, #016969 100%);
+}
+/* Just to check how it is changing */
+#button:hover {
+    background: -moz-linear-gradient(bottom, #aadddd 0%, #006b6b 100%);
+    background: -webkit-linear-gradient(bottom, #aadddd 0%, #006868 100%);
+    background: linear-gradient(bottom, #aadddd 0%, #016969 100%);
+}
+
+/* Box Shadow */
+.button {
+    margin: 10px;
+    display: inline-block;
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #8aaa77;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    background: #aeddaa;
+    background: -moz-linear-gradient(left, #aeddaa 0%, #006b05 100%);
+    background: -webkit-linear-gradient(left, #aeddaa 0%, #006b05 100%);
+    background: linear-gradient(left, #aeddaa 0%, #006b05 100%);
+}
+.button:hover {
+    background: -moz-linear-gradient(right, #aeddaa 0%, #006b05 100%);
+    background: -webkit-linear-gradient(right, #aeddaa 0%, #006b05 100%);
+    background: linear-gradient(right, #aeddaa 0%, #006b05 100%);
+}
+/*Separate buttons - shadow values are: 1 - horizontal length, 2 - vertical length, 3 - Blur Radius, 4 - spread radius, 5 - Shadow color, */
+.button1 {
+    box-shadow: 5px 3px 2px 7px rgba(20, 180, 70, 0.4);
+}
+
+.button2 {
+    box-shadow: 3px 3px rgba(239, 67, 255, 0.5);
+}
+.button3 {
+    box-shadow: 5px 5px 15px rgb(194, 70, 206);
 }
