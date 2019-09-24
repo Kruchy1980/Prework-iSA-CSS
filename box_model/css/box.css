@@ -1,0 +1,222 @@
+#main-content {
+    background-color: rgb(192, 192, 192);
+}
+/*Page Title Style -  both elements we have used Id from the div tag which includes the header content */
+#header { /*That is header calling */
+    text-align: center;
+    background-color: rgb(192, 180, 180);
+    border-radius: 25px;
+}
+/* Main title style */
+#header h1{ /* Specified element of  */
+    margin: 0;
+    text-decoration: underline;
+    text-decoration: bold;
+}
+/* The sub title of the page style */
+#header small { /* That is how we can choose more specified elements of html code. */
+    text-decoration: none;
+    position: relative; 
+    top: -20px;
+    margin: 0;
+}
+/*Nav bar small styling*/
+nav {
+    border: 5px ridge aqua;
+    background-color: rgb(24, 156, 35);
+}
+
+nav li {
+    display: inline;
+    border: 1px solid red;
+    background-color: rgb(160, 158, 158);
+    margin: 10px;
+    padding: auto;
+}
+/* =======================================================*/
+/* Here is the main style of the page content */
+.box {
+    /* margin: 30px; */
+    /* padding: 30px; */
+    border: 1px solid #000;
+    width: 400px;
+    height: 200px;
+}
+/*margins - tells us what are the outside distances beetwen elements: 1-up 2-right 3-bottom 4-left*/
+
+.margin {
+    margin: 15px 20px 25px 5px;
+}
+/* paddings - tells us what are the inside distances beetwen elements: 1-up 2-right 3-bottom 4-left */
+.padding {
+    padding: 10px 20px 30px 40px
+}
+/* Paddings and Margins long - hand - we can separate the margins or paddings by specified directions */
+/* The lower records are the same as that above */
+.margin1 {
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+.padding1 {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+/* Borders - are similar to above attributes but describes only the border of element */
+/* Main style of borders*/
+#borders {
+    width: 90%;
+    background-color: #f98a69;
+    height: 250px;
+    margin: auto;
+}
+.box1 {
+    padding: 20px;
+    margin: auto 25px ;
+    float: left;
+}
+/* Some style to the part of site which contains the boxes with borders  */
+#block-lvl-elements {
+    width: 80%;
+    margin: auto;
+}
+/*Here will be separated specialy for borders classes*/
+.dashed {
+    border: 10px blue dashed;
+}
+
+.dotted {
+    border: 10px blue dotted;   
+}
+
+.double {
+    border: 10px blue double;
+}
+
+.groove {
+    border: 10px blue groove;
+}
+
+.inset {
+    border: 10px blue inset;
+}
+
+.outset {
+    border: 10px blue outset;
+}
+
+.ridge {
+    border: 10px blue ridge;
+}
+
+.solid {
+    border: 10px blue solid;
+}
+
+/* Block level elements*/
+/* This is style to display elements in different layout on the page */
+/* The block elements are the elements which takes 100% width of element, but can be modified by the "width" and "height" attribute */
+.block {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    /*display: inline; /* That display will shows the blocks in a small boxes as the iline elements but they will be displayed as blocks in inline. */
+}
+/* The inline elements are the elements which are as same width as the content inside, but as block elements can be modified */
+/* The inline elements have no top and bottom margins declared */
+.inline {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    /*display: block; /* Cahnges the view of elements for the blocks when each of them have their own area around, and width takes around 100% of element they are in */
+    display: inline-block; /* Inline blocks are displayed as couple small blocks with free areas around */
+    /*display: inline;*/ /* Does not have a sense to use such a kind of displaying - it wont change anything*/
+}
+
+/* Width & Height - These two parameters can define basic dimentions of element*/
+/* Main box style */
+#width-height {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 2%;
+}
+#width-height div {
+    background-color:  #ccc;
+    margin: 0 0 20px 0;
+}
+/* Static width */
+.static-width {
+    width: 300px;
+    height: 100px;
+}
+/* Percentage width */
+.percentage-width {
+    width: 70%;
+    height: 50px;
+}
+/* Inline block */
+.inline-block {
+    width: 40%;
+    display: inline-block;
+    height: 50px;
+}
+/* Rounded Corners - rounded corners starts from left upper cornrer and move according to clockwise */
+/* Static width */
+.static-width {
+    width: 300px;
+    height: 100px;
+    border-radius: 10px; /* That attrribute is responding for rounding corners */
+}
+/* Percentage width */
+.percentage-width {
+    width: 70%;
+    height: 50px;
+    border-radius: 10px 20px 30px 40px;
+}
+/* Inline block */
+.inline-block {
+    width: 40%;
+    display: inline-block;
+    height: 50px;
+    border-radius: 25% 35%;
+}
+
+/* Backgrounds */
+.background {
+    width: 300px;
+    height: 300px;
+    background-color: #606060;
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: bottom;
+    background-position-x: right;
+}
+/* Background shorthand*/
+.background1 {
+    width: 300px;
+    height: 300px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTozwCN6aTxXAHF7Wp7FqR6uOK0KEu_x57-UhgSvZUDPOcOkX3Y") no-repeat;
+    background-color: #606060;
+    background-size: 200px;
+
+}
+/* Multiple backgrounds*/
+/* Two images at the background - the first is going to be on the top the second one to the bottom separated by coma must be. */
+#banner {
+    background-color: #585480;
+    width: 80%;
+    height: 300px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTozwCN6aTxXAHF7Wp7FqR6uOK0KEu_x57-UhgSvZUDPOcOkX3Y"), url("https://img.joemonster.org/i/2014/10/googlesv_05.jpg"); 
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    background-size: 100px, cover;
+    background-position-x: 65%,0;
+    background-position-y: 97%,-94px;  
+}
